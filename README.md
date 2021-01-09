@@ -31,3 +31,11 @@ The table found below states which file sources which within the app. The main f
 | `server.R`                | `server/input_settings.R`<br>`server/plot_settings.R`<br>`server/modals.R` |
 | `server/input_settings.R` | `server/data_preview.R`                                                    |
 | `server/modals.R`         | `server/modals/*.R`                                                        |
+
+# Contributing
+
+To test existing functionality and check current test coverage, run:
+
+```bash
+Rscript -e "devtools::test(); covr::package_coverage()"
+```
